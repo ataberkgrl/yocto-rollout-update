@@ -1,0 +1,8 @@
+[Service]
+Type=simple
+Restart=always
+ExecStart="python3" "/rollout-agent/agent.py"
+WorkingDirectory=/rollout-agent
+
+[Install]
+WantedBy=multi-user.target
